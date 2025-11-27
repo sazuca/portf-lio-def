@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfólio — Samuel Ferraz</title>
+    <meta name="description"
+        content="Portfólio pessoal de Samuel Ferraz — trajetória, projetos e evolução na programação (2023–2025)." />
+
+    <style>
+        :root {
+            --bg: #0b1220;
+            --card: rgba(255, 255, 255, 0.05);
+            --accent: #4f9aff;
+            --text: #e6eef8;
+            --muted: #9fb0c8;
+
+            --glass: rgba(255, 255, 255, 0.03);
+            --radius: 14px;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 32px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 28px;
+        }
+
+        .brand {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--accent), #60a5fa);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #052024;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin: 0;
+        }
+
+        p.lead {
+            margin: 0;
+            color: var(--muted);
+        }
+
+
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            margin-left: 14px;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--text);
+        }
+
+
+        .card {
+            background: var(--card);
+            border-radius: var(--radius);
+            padding: 20px;
+            box-shadow: 0 6px 24px rgba(2, 6, 23, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            margin-bottom: 20px;
+        }
+
+
+        img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+        }
+
+
+        .photos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+
+        .evolucao-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 10px;
+            padding: 12px;
+        }
+
+
+        .links a {
+            display: inline-block;
+            margin-right: 10px;
+            background: var(--accent);
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .links a:hover {
+            opacity: 0.85;
+        }
+
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 14px;
+            margin-top: 28px;
+        }
+
+        @media(max-width:600px) {
+            body {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="brand">
+                <div class="avatar">SF</div>
+                <div>
+                    <h1>Samuel Gonçalves Ferraz</h1>
+                    <p class="lead">Portfólio pessoal - Colégio Estadual Presidente Abraham Lincoln</p>
+                </div>
+            </div>
+
+            <nav>
+                <a href="#sobre">Sobre</a>
+                <a href="#evolucao">Evolução</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#fotos">Fotos</a>
+                <a href="#contato">Contato</a>
+                <a href="#conclusao">Conclusão</a>
+            </nav>
+        </header>
+
+        <main>
+
+            <section id="sobre" class="card intro">
+                <h2>Sobre mim</h2>
+                <p>Meu nome é <strong>Samuel Ferraz</strong>, tenho 18 anos e nasci em <strong>Colombo</strong>. Sou
+                    filho de <strong>Ronaldo Ferraz</strong> e <strong>Josiane Ferraz</strong>. Na escolha do curso eu
+                    fui mais pelo coração e por influência de um amigo. Mas também por ter mais afinidade com esse curso
+                    do que com outros. Com o passar do tempo me adaptei e percebi que fiz a melhor escolha dentre todas
+                    as opções.
+                </p>
+            </section>
+
+            <section id="evolucao" class="card">
+                <h2>Minha evolução de aprendizado (2023–2025)</h2>
+                <p>Durante esse período aprendemos HTML, CSS, JavaScript, MySQL, Python, Banco de dados e realizamos
+                    diversos projetos,
+                    tanto práticos quanto acadêmicos, além de cursos no Alura.</p>
+
+
+                <div class="evolucao-grid">
+                    <img src="Captura de Tela (17).png" alt="">
+                    <img src="Captura de Tela (18).png" alt="">
+                    <img src="Captura de Tela (19).png" alt="">
+                </div>
+
+                <div class="projects">
+                    <div class="project">
+                        <h4>2023 - Primeiro ano de curso</h4>
+                        <p class="muted">Em 2023 tivemos diversas matérias mostrando o começo, ainda sem usar muito o
+                            laboratório, apenas usando os recursos do celular, principalmente com o professor Elvertoni.
+                        </p>
+                    </div>
+
+                    <div class="project">
+                        <h4>2024 — Desenvolvimento intermediário no segundo ano de curso</h4>
+                        <p class="muted">Em 2024 começamos com o avanço intermediário do curso, agora também com o
+                            professor Jefferson que nos ajudava com Banco de dados.</p>
+                    </div>
+
+                    <div class="project">
+                        <h4>2025 — Consolidação</h4>
+                        <p class="muted">Em 2025 foi apresentado para nós o Google Colab, com o professor Fernando, e
+                            também com o professor João Elianos nos ensinando bastante sobre desing e mais coisas
+                            voltadas para o front-end
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projetos" class="card">
+                <h2>Meus Projetos</h2>
+                <p>Esses são alguns dos meus projetos desenvolvidos durante o curso, coloquei os 3 mais importantes ao
+                    longo do curso, aqui contamos com as linguagens mais padrões que são HTML E CSS. O cardápio da
+                    cafeteria e os pontos turísticos de Curitiba foram feitos com a ajuda do professor Toni, durante o
+                    primeiro e segundo ano de curso. Já o google Colab foi totalmente feito com o professor Fernando no
+                    3° ano. </p>
+
+                <div class="links">
+                    <a href="https://sazuca.github.io/pontosturisticos/" target="_blank">🌍 Pontos Turísticos</a>
+                    <a href="https://colab.research.google.com/drive/15yi7nuqOpffCc48bVEoJ2rlePR5WhcVl?usp=sharing"
+                        target="_blank">💻 Projeto Colab</a>
+                    <a href="https://sazuca.github.io/padaria/" target="_blank">☕ Cafeteria</a>
+                </div>
+            </section>
+
+            <section id="fotos" class="card">
+                <h2>Galeria de Fotos</h2>
+                <p class="muted">Aqui estão alguns momentos com a turma, durante os 3 anos tivemos vários momentos
+                    ótimos em conjunto, todo dia com ótimas risadas, sempre um deixando o dia do outro mais feliz, e é
+                    por isso que amo a todos vcs. aqui deixei um link do drive que fiz com algumas fotos durante esses 3
+                    anos.
+                    <a href="https://drive.google.com/drive/folders/14uO8uejFVGIDRfnF_XyAr0DUGyuT87rc?usp=sharing"
+                        target="_blank">Google Drive</a>
+                </p>
+
+                <div class="photos-grid">
+                    <img src="turma 1.jpg" alt="Turma 1" />
+                    <img src="turma 2.jpg" alt="Turma 2" />
+                    <img src="turma 3.jpg" alt="Turma 3" />
+                </div>
+            </section>
+
+            <section id="contato" class="card">
+                <h2>Contato</h2>
+                <p class="muted">Redes sociais e meios de contato:</p>
+
+                <div class="links">
+                    <a href="https://www.instagram.com/_sazuca" target="_blank">📸 Instagram</a>
+                    <a href="tel:+5541999754316">📱 WhatsApp</a>
+                </div>
+            </section>
+
+            <!-- 🔥 NOVA SEÇÃO: CONCLUSÃO SEPARADA -->
+            <section id="conclusao" class="card">
+                <h2>Conclusão</h2>
+                <p>Durante esses três anos de curso, pude desenvolver não apenas conhecimentos técnicos, mas também
+                    maturidade, responsabilidade e trabalho em equipe. Mesmo que seguir na área de programação como
+                    carreira seja, para mim, um plano B, reconheço o quanto esse curso foi importante para meu
+                    crescimento. Entre todas as opções, esse foi sem dúvida o melhor caminho que eu poderia ter
+                    escolhido.</p>
+
+                <p>Aprendi muito, evoluí como pessoa e vivi momentos que vou guardar para sempre. Participar dessa
+                    jornada ao lado de pessoas tão incríveis tornou tudo ainda mais especial. Saio deste ciclo com
+                    orgulho do que construí e com gratidão por cada experiência vivida.</p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Portfólio de Samuel Ferraz.</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
